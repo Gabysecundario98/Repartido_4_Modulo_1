@@ -1,0 +1,64 @@
+body {
+    margin: 0%;
+    
+    background: linear-gradient( rgb(212, 207, 124) 60%,rgb(210, 169, 226));
+}
+.encabezado {
+    font-family: 'Permanent Marker', cursive;
+    width: 412px;
+    display: block;
+    text-align: center;
+    align-items:center ;
+}
+.encabezado img {
+    width: 50%;
+    height: auto;
+    padding: 5%;
+
+}
+.lista li {
+    list-style: none;
+    margin: 10px;
+}
+.lista {
+    margin: 5%;
+    display: flex;
+   justify-content: center;
+   width: 312px;
+   height: auto;
+}
+
+
+
+.listado {
+    display: block;
+    max-width: 415px;
+}
+.listado img {
+    max-width: 100%;
+}
+.listado h2 {
+    margin: 5%;
+}
+
+.footer{
+    background-image: url(img\game-over-3862774_960_720.jpg);
+    max-height: 100px;
+    max-width: 415px;
+    text-align: center;
+    margin-top: 150px;
+}
+@media (max-width:415px) {
+    .lista {
+        display: none;
+    }
+    .encabezado img {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .encabezado h1 {
+        font-size: 65px;
+        margin-bottom: 60px
+    };
+}
