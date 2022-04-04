@@ -1,4 +1,5 @@
 body {
+    padding: 0px;
     margin: 0%;
     color: azure;
     background: linear-gradient( #2C2B3B 20%, #7698B3 );
@@ -11,14 +12,16 @@ body {
     display: block;
     text-align: center;
     align-items:center;
+    margin-bottom: 50px;
 }
 #h1 {
     font-family: 'Permanent Marker', cursive;
     color: #7698B3;  
-    width: 50%;
+    width: 100%;
     height: auto;
     display: block;
     justify-content: center;
+    font-size: 100%;
     
 }
 .encabezado h1 {
@@ -27,31 +30,58 @@ body {
 }
 
 .encabezado img {
+    max-width: 300px;
+    max-height: auto;
     margin: 5%;
     border-radius: 60%;
-    width: 50%;
+    width: 150%;
     height: auto;
     padding: 5%;
     border: yellow solid 5px;
 
 }
+.buscador {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
 
 
 .listado {
+    margin-left: 2px;
+    margin-top: 20%;
     display: block;
     text-align: center;
-    align-items:center;
+    justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+.listado {
+    border: 7px yellow solid;
 }
 .listado img {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
 }
 .listado h2 {
-    margin: 5%;
+    font-family: 'Permanent Marker', cursive;
     color: burlywood;
 }
+.listado a {
+    background-color: rgba(255, 255, 0, 0.521);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: "Permanent Marker";
+    border-radius: 30%;
+    border: #2C2B3B 3px solid;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.listado a :hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(255, 0, 0, 0.993);
+}
+
 .footerholder {
     padding-top: 20%;
     background: none repeat scroll 0 0 transparent;
@@ -59,57 +89,29 @@ body {
     position: fixed;
     text-align: center;
     width: 100%;
+    height: 50px;
+    display: block;
+    justify-content: space-around;
 }
 
 .footer {
     margin-top: 10%;
     text-align: center;
-    background: none repeat scroll 0 0 rgba(85, 85, 219, 0.26);
-    height: 100px;
-    margin: auto;
-    width: 400px;
-}
-ul{
-    display: none;
-  }
-  
-  input:checked  ~ ul{
-    display:block;
-  }
-  input {
-    display: none;
-  }
-  label {
-    margin-left: 52%;
-    margin-bottom: 5%;
-    box-sizing: border-box;
-    display: inline-block;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none;
-    align-items: center;
-  }
-  li {
+    background: none repeat scroll 0 0 rgba(174, 174, 187, 0.26);
+    height: 50%;
+    width: 103%;
     display: block;
-    background: lightgrey;
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-    border-bottom: 1px solid grey;
-  }
- 
+    
+    
+}
+
 
 @media (max-width:415px) {
     .lista {
         display: none;
     }
     .encabezado img {
-       max-width: 20%;
+       max-width: 50%;
     }
     .encabezado h1 {
         font-size: 65px;
