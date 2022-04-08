@@ -1,6 +1,7 @@
 body {
     padding: 0px;
-    margin: 0%;
+    margin: 0px;
+    margin-left: -30px;
     color: azure;
     background: linear-gradient( #2C2B3B 20%, #7698B3 );
 }
@@ -10,8 +11,6 @@ body {
     justify-content: end;
 }
 .botonesarriba a{
-        max-width: 80px;
-        max-height: 20px;
         text-decoration: none;
         padding: 5px;
         font-weight: 600;
@@ -62,13 +61,16 @@ body {
 
 }
 
-
+.navegador {
+    margin-left: 30px;
+}
 
 
 .encabezado img {
+   
     max-width: 300px;
     max-height: auto;
-    margin: 5%;
+    text-decoration: center;
     border-radius: 60%;
     width: 150%;
     height: auto;
@@ -77,18 +79,12 @@ body {
 
 }
 .buscador {
-    display: flex;
-    justify-content: center;
-    background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 90px 0px;
-  background-size: 24px;
-  width: 415px;
-  position: center;
-  border: transparent;
-  border-bottom: solid 1px rgb(231, 221, 132);
-  padding: 0px 0px 10px 30px;
-  outline: none;
+    width: 100vw;
+    margin-bottom: 30px;
 }
-
+.buscador form {
+    width: 100vw !important;
+}
 .listado {
     margin-left: 2px;
     margin-top: 20%;
@@ -117,7 +113,7 @@ body {
     border-radius: 5px;
     border: #2C2B3B 3px solid;
     font-size: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-decoration: none;
 }
 .listado a :hover {
@@ -135,13 +131,22 @@ body {
     display: block;
     justify-content: space-around;
 }
+.video {
+
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
 
 .footer {
     margin-top: 10%;
     text-align: center;
     background: none repeat scroll 0 0 rgba(174, 174, 187, 0.26);
     height: 50%;
-    width: 103%;
+    width: 100%;
     display: block;
 }
 
@@ -151,7 +156,7 @@ body {
         display: none;
     }
     .encabezado img {
-       max-width: 50%;
+       max-width: 15%;
     }
     .encabezado h1 {
         font-size: 65px;
@@ -177,6 +182,14 @@ body {
         margin-top: 50px;
         
     }
-   
+   .botonesarriba {
+       display: flex;
+       justify-content: center;
+   }
+   .video {
+       display: block;
+       justify-content: center;
+       margin-left: 40%;   
+   }
 
 }
